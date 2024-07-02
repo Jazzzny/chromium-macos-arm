@@ -16,8 +16,9 @@ if [[ $_target_cpu == "arm64" ]]; then
   # sudo xcode-select -s "/Applications/Xcode_13.4.app"
 fi
 
-cp "$_main_repo/flags.gn" "$_src_dir/out/Default/args.gn"
-cat "$_root_dir/flags.macos.gn" >> "$_src_dir/out/Default/args.gn"
+# cp "$_main_repo/flags.gn" "$_src_dir/out/Default/args.gn"
+# cat "$_root_dir/flags.macos.gn" >> "$_src_dir/out/Default/args.gn"
+cp "$_root_dir/flags.gn" "$_src_dir/out/Default/args.gn"
 
 cd "$_src_dir"
 
